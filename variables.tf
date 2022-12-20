@@ -18,3 +18,8 @@ variable "project_number" {
   type        = string
   description = "Number of your project (example: 596376125057)."
 }
+
+variable "role_cloudsql_editor_members" {
+  type        = list(string)
+  description = "List of users or service accounts need Cloud SQL Editor role"
+}
